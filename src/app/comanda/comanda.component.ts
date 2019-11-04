@@ -17,9 +17,12 @@ export class ComandaComponent implements OnInit {
       chopp : this.formBuilder.control(''),
       pizzas : this.formBuilder.control(''),
       recheios : this.formBuilder.control(''),
-      pessoas : this.formBuilder.control('')
-    })
+      pessoas : this.formBuilder.control(''),
+      pagaservico : this.formBuilder.control(true)})
+  }
+  onProcessar(){
     
+    console.log(this.formcomanda.value);
   }
 }
 

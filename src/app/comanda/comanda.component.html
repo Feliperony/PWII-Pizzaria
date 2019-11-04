@@ -10,7 +10,7 @@
 
           <h1>COMANDA</h1>
 
-          <form class="mt-5" [formGroup]="formCliente">
+          <form class="mt-5" [formGroup]="formcomanda" (ngSubmit)="onProcessar()">
 
             <p>
               <label>Chopp</label>
@@ -30,12 +30,12 @@
                   </p>
 
             <p class="keepcomanda">
-              <input type="checkbox" name="inServico"/>
+              <input type="checkbox" name="inServico" formControlName="pagaservico"/>
               <label>Taxa de Serviço</label>
             </p>
 
             <p class="comanda button">
-              <input type="submit" value="Registrar"/>
+              <input type="submit" value="Registrar" onclick="onProcessar()"/>
             </p>
 
           </form>
