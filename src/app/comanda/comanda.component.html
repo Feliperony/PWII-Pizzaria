@@ -10,23 +10,23 @@
 
           <h1>COMANDA</h1>
 
-          <form>
+          <form class="mt-5" [formGroup]="formCliente">
 
             <p>
               <label>Chopp</label>
-              <input type="text" name="inChopp"/>
+              <input type="text" name="inChopp" formControlName="Chopp"/>
             </p>
             <p>
                 <label>Pizzas</label>
-                <input type="text" name="inPizzas"/>
+                <input type="text" name="inPizzas" formControlName="Pizzas"/>
               </p>
               <p>
                   <label>Recheios</label>
-                  <input type="text" name="inRecheios"/>
+                  <input type="text" name="inRecheios" formControlName="Recheios"/>
                 </p>
                 <p>
                     <label>Pessoas</label>
-                    <input type="text" name="inPessoas"/>
+                    <input type="text" name="inPessoas" formControlName="Pessoas"/>
                   </p>
 
             <p class="keepcomanda">

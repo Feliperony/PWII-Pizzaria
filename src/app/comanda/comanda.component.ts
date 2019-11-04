@@ -10,7 +10,7 @@ export class ComandaComponent implements OnInit {
 
   formcomanda: FormGroup;
 
-  constructor(public formBuilder: FormBuilder) { }
+  constructor(public formBuilder: FormBuilder) {}
 
   ngOnInit() {
     this.formcomanda = this.formBuilder.group({
@@ -18,6 +18,8 @@ export class ComandaComponent implements OnInit {
       pizzas : this.formBuilder.control(''),
       recheios : this.formBuilder.control(''),
       pessoas : this.formBuilder.control('')
+    })
+    
   }
-
 }
+
