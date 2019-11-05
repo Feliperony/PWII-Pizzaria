@@ -25,10 +25,14 @@ export class ComandaComponent implements OnInit {
     let totalChopp = this.formcomanda.value.chopp * 7.30 ;
     let totalpizzas = this.formcomanda.value.pizzas * 31.50 ;
     let totalrecheios = this.formcomanda.value.recheios * 5.90 ;
+
     let consumo = totalChopp + totalpizzas + totalrecheios ;
     let servico = consumo / 10 ;
     let total = consumo + servico ;
-    let totalporpessoa = this.formcomanda.value.pessoas / total ;
+    let totalporpessoa =  total / this.formcomanda.value.pessoas;
+
+    alert("consumo: " + consumo +"\n" + "Serviço: " + servico + "\n" + "Total: " + total + "\n" + "Por pessoa: " + totalporpessoa );
+
 
   }
 }
