@@ -22,7 +22,14 @@ export class ComandaComponent implements OnInit {
   }
   onProcessar(){
     
-    console.log(this.formcomanda.value);
+    let totalChopp = this.formcomanda.value.chopp * 7.30 ;
+    let totalpizzas = this.formcomanda.value.pizzas * 31.50 ;
+    let totalrecheios = this.formcomanda.value.recheios * 5.90 ;
+    let consumo = totalChopp + totalpizzas + totalrecheios ;
+    let servico = consumo / 10 ;
+    let total = consumo + servico ;
+    let totalporpessoa = this.formcomanda.value.pessoas / total ;
+
   }
 }
 
