@@ -10,7 +10,7 @@
 
           <h1>COMANDA</h1>
 
-          <form class="mt-5" [formGroup]="formcomanda" (ngSubmit)="onProcessar()">
+          <form class="mt-5" [formGroup]="formcomanda"  (ngProcessar)="onProcessar()">
 
             <p>
               <label>Chopp</label>
@@ -35,7 +35,7 @@
             </p>
 
             <p class="comanda button">
-              <input type="submit" value="Registrar" onclick="onProcessar()"/>
+              <input type="submit" value="Registrar" />
             </p>
 
           </form>
